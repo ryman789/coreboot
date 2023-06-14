@@ -141,14 +141,14 @@ config EDK2_BOOTSPLASH_FILE
 
 config EDK2_BOOT_MANAGER_ESCAPE
 	bool "Use Escape key for Boot Manager"
-	default y
+	default n
 	help
 	  Use Escape as the hot-key to access the Boot Manager. This replaces
 	  the default key of F2.
 
 config EDK2_BOOT_TIMEOUT
 	int "Set the timeout for boot menu prompt"
-	default 2
+	default 0
 	help
 	  The length of time in seconds for which the boot splash/menu prompt will be displayed.
 	  For boards with an internal display, the default value of 2s is generally sufficient.
